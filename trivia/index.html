@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('submit', function() {
+                            let status2 = document.querySelector('#status2');
+                            let value = document.querySelector('#value');
+
+                            if (value.value == 'Switzerland' || value.value == 'switzerland' || value.value == 'SWITZERLAND') {
+                                value.style.backgroundColor = 'green';
+                                status2.innerHTML = 'Correct!';
+                            }
+                            else {
+                                value.style.backgroundColor = 'red';
+                                status2.innerHTML = 'Incorrect!';
+                            }
+                        });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
+                <p id="status2"></p>
+
+                <form>
+                    <input type="text" id="value">
+                    <button>Check Answer</button>
+
+                    <script>
+                        document.addEventListener('submit', function() {
+                            let status2 = document.querySelector('#status2');
+                            let value = document.querySelector('#value');
+
+                            if (value.value == 'Switzerland' || value.value == 'switzerland' || value.value == 'SWITZERLAND') {
+                                value.style.backgroundColor = 'green';
+                                status2.innerHTML = 'Correct!';
+                            }
+                            else {
+                                value.style.backgroundColor = 'red';
+                                status2.innerHTML = 'Incorrect!';
+                            }
+                        });
+                    </script>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

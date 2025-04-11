@@ -1,0 +1,82 @@
+body {
+    font-family: monospace, sans-serif;
+    text-align: center;
+    background-color: #E7E9E8;
+    color: #000;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  /* Dark Theme */
+  body.dark-theme {
+    background-color: #070b34;
+    color: #fff;
+  }
+
+  /* Light Theme */
+  body.light-theme {
+    background-color: #E7E9E8;
+    color: #000;
+  }
+
+  .weather-app {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  body.dark-theme .weather-app {
+    background: #141852;
+    border: 5px solid #bababa; /* Light blue border */
+    border-radius: 40px;
+  }
+
+  #weather-forecast-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px; /* Spacing between the title and other content */
+  }
+
+  #weather-icon img {
+    width: 80px;  /* Adjust size as necessary */
+    height: 80px;
+    margin: 10px auto;
+  }
+
+  #city-input {
+    font-family: monospace, sans-serif;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    font-family: monospace, sans-serif;
+    padding: 10px 20px;
+    background-color: #9EA3AD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #2E3033;
+  }
+
+  #weather-result {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  #weather-description, #temperature, #feels-like, #temp-min, #temp-max, #humidity, #wind-speed, #clouds, #visibility, #sunrise, #sunset {
+    margin: 8px 0;
+    font-size: 16px;
+  }
